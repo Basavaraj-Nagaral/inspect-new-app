@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_map_page">
+    <cmn_map_page action="INSERT_OR_UPDATE">
+        <center_address>Hydrabad,India</center_address>
+        <center_latitude/>
+        <center_longitude/>
+        <controls_size>small</controls_size>
+        <coordinates_retrieved_on/>
+        <disable_map_controls/>
+        <disable_nav_bar>false</disable_nav_bar>
+        <filter/>
+        <initial_zoom>8</initial_zoom>
+        <name>x_820117_inspect_Test1</name>
+        <overview>false</overview>
+        <refresh_on_zoom>true</refresh_on_zoom>
+        <roles/>
+        <script><![CDATA[var gr = new GlideRecord("x_820117_inspect_hotel_table");
+gr.addQuery('hotel_name', 'KFC');
+gr.addActiveQuery();
+gr.query();
+while (gr.next()) {
+	if(gr.location.latitude && gr.location.longitude){
+	   var item = map.addItem(gr);
+	   item.latitude = String(gr.location.latitude);
+	   item.longitude = String(gr.location.longitude);
+	   item.dialog_title = gr.getDisplayValue();
+	   item.icon = "https://maps.google.com/mapfiles/kml/pal3/icon51.png";
+//	item.icon = "https://developers.google.com/maps/documentation/javascript/examples/full/images";
+	   item.icon_width = "50";
+	   item.icon_height = "50";
+	}
+}]]></script>
+        <show_device_location>true</show_device_location>
+        <suffix>Test1</suffix>
+        <sys_class_name>cmn_map_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-08 10:11:59</sys_created_on>
+        <sys_id>55d473d5474b511085406285d36d438e</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>x_820117_inspect_Test1</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_update_name>cmn_map_page_55d473d5474b511085406285d36d438e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-08 11:58:58</sys_updated_on>
+        <type>normal</type>
+        <type_selection>buttons</type_selection>
+        <use_advanced_configuration>false</use_advanced_configuration>
+    </cmn_map_page>
+</record_update>
