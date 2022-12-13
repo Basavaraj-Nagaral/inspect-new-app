@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="veg" label="Veg" language="en" table="x_820117_inspect_hotel_table">
+    <sys_documentation element="location" label="Location" language="en" table="x_820117_inspect_orders">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>veg</element>
+            <element>location</element>
             <help/>
             <hint/>
-            <label>Veg</label>
+            <label>Location</label>
             <language>en</language>
-            <name>x_820117_inspect_hotel_table</name>
-            <plural>Vegs</plural>
+            <name>x_820117_inspect_orders</name>
+            <plural>Locations</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-17 06:35:41</sys_created_on>
-            <sys_id>2f4b1d944753111085406285d36d43e1</sys_id>
+            <sys_created_on>2022-11-17 09:21:37</sys_created_on>
+            <sys_id>524142dc47d3111085406285d36d4382</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Veg</sys_name>
+            <sys_name>Location</sys_name>
             <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
             <sys_policy/>
             <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
-            <sys_update_name>sys_documentation_x_820117_inspect_hotel_table_veg_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_820117_inspect_orders_location_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-17 06:35:41</sys_updated_on>
+            <sys_updated_on>2022-11-17 09:21:37</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

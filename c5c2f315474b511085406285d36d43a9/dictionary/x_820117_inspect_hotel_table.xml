@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Hotel_table" max_length="40" name="x_820117_inspect_hotel_table" sizeclass="3" type="collection">
+    <element label="Hotel_table" max_length="40" name="x_820117_inspect_hotel_table" sizeclass="6" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Hotel Name" max_length="40" name="hotel_name" type="string"/>
         <element attributes="encode_utf8=false" label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Nonveg" max_length="40" name="nonveg" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Chicken Burger" sequence="0" value="chicken burger"/>
-                <element inactive_on_update="false" label="Chicken Sandwitch" sequence="1" value="chicken sandwitch"/>
-                <element inactive_on_update="false" label="Chicken rice bowl" sequence="2" value="chicken rice bowl"/>
-            </choice>
-        </element>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="veg burger" label="Veg" max_length="40" name="veg" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Veg burger" sequence="0" value="veg burger"/>
-                <element inactive_on_update="false" label="Veg rice bowl" sequence="1" value="veg rice bowl"/>
-                <element inactive_on_update="false" label="veg sandwitch" sequence="2" value="veg sandwitch"/>
-            </choice>
-        </element>
         <index name="index">
             <element name="location"/>
         </index>

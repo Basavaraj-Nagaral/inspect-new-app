@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>nonveg</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Auto populate order field</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var rn = g_form.getReference('non_veg',callBack);
+	
+   
+}
+function callBack(usr){
+	g_form.setValue("veg_item",usr.veg);
+	g_form.setValue("nonveg_item",usr.nonveg);
+	g_form.setValue("location",usr.location);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-17 09:47:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6758adc47d3111085406285d36d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto populate order field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_update_name>sys_script_client_f6758adc47d3111085406285d36d43fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-17 09:47:16</sys_updated_on>
+        <table>x_820117_inspect_hotel_table</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="inspect">c5c2f315474b511085406285d36d43a9</application>
+        <file_path/>
+        <instance_id>8f648321db615118f492c59705961907</instance_id>
+        <instance_name>dev133040</instance_name>
+        <name>sys_script_client_f6758adc47d3111085406285d36d43fa</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;nonveg&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Auto populate order field&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var rn = g_form.getReference('non_veg',callBack);
+	
+   
+}
+function callBack(usr){
+	g_form.setValue("veg_item",usr.veg);
+	g_form.setValue("nonveg_item",usr.nonveg);
+	g_form.setValue("location",usr.location);
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-17 09:47:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f6758adc47d3111085406285d36d43fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Auto populate order field&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="inspect" source="x_820117_inspect"&gt;c5c2f315474b511085406285d36d43a9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="inspect"&gt;c5c2f315474b511085406285d36d43a9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f6758adc47d3111085406285d36d43fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-17 09:47:16&lt;/sys_updated_on&gt;&lt;table&gt;x_820117_inspect_hotel_table&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1277208153</payload_hash>
+        <record_name>Auto populate order field</record_name>
+        <reverted_from/>
+        <source>a858f6674703111085406285d36d43fc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-17 09:47:16</sys_created_on>
+        <sys_id>0a27c6144717111085406285d36d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18484fc455d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-17 09:47:16</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>4227c614e21711103c4b3e132a237433</update_guid>
+        <update_guid_history>4227c614e21711103c4b3e132a237433:-1277208153</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 06:55:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0a48b46fc6b64fb8a27b4224f35dc090</sys_id>
+        <sys_metadata>f6758adc47d3111085406285d36d43fa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto populate order field</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_parent display_value="Hotel_table">1d633755474b511085406285d36d4339</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_scope_delete display_value="">2c6ca52cc63d45288ef36c1643f59240</sys_scope_delete>
+        <sys_update_name>sys_script_client_f6758adc47d3111085406285d36d43fa</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f6758adc47d3111085406285d36d43fa">0a27c6144717111085406285d36d4333</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-22 06:55:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
