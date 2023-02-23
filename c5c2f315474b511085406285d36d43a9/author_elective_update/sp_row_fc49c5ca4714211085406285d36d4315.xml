@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <sp_column display_value="2">e909c1ca4714211085406285d36d43a7</sp_column>
+        <sp_container/>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 08:49:00</sys_created_on>
+        <sys_id>fc49c5ca4714211085406285d36d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_update_name>sp_row_fc49c5ca4714211085406285d36d4315</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 08:49:00</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="inspect">c5c2f315474b511085406285d36d43a9</application>
+        <file_path/>
+        <instance_id>8f648321db615118f492c59705961907</instance_id>
+        <instance_name>dev133040</instance_name>
+        <name>sp_row_fc49c5ca4714211085406285d36d4315</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column display_value="2">e909c1ca4714211085406285d36d43a7</sp_column><sp_container/><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-11 08:49:00</sys_created_on><sys_id>fc49c5ca4714211085406285d36d4315</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package><sys_policy/><sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope><sys_update_name>sp_row_fc49c5ca4714211085406285d36d4315</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-11 08:49:00</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>-905467066</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>a858f6674703111085406285d36d43fc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 08:49:00</sys_created_on>
+        <sys_id>b849c5ca4714211085406285d36d4317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185a004b2fc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 08:49:00</sys_updated_on>
+        <type>Row</type>
+        <update_guid>f049c5ca9e1421100c5296bc4f5b9017</update_guid>
+        <update_guid_history>f049c5ca9e1421100c5296bc4f5b9017:-905467066</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">550ccd8e4714211085406285d36d43ae</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 09:01:03</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>a259ca8a21d74edc8c902bcfab673910</sys_id>
+        <sys_metadata>fc49c5ca4714211085406285d36d4315</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_scope_delete display_value="">2c6ca52cc63d45288ef36c1643f59240</sys_scope_delete>
+        <sys_update_name>sp_row_fc49c5ca4714211085406285d36d4315</sys_update_name>
+        <sys_update_version display_value="sp_row_fc49c5ca4714211085406285d36d4315">b849c5ca4714211085406285d36d4317</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 09:01:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

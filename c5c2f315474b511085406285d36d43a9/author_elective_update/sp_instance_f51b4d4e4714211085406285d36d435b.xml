@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">6d09c1ca4714211085406285d36d43a5</sp_column>
+        <sp_widget display_value="Stock Header">bf5ec2f2cb10120000f8d856634c9c0c</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 08:56:59</sys_created_on>
+        <sys_id>f51b4d4e4714211085406285d36d435b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_update_name>sp_instance_f51b4d4e4714211085406285d36d435b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 08:56:59</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=f51b4d4e4714211085406285d36d435b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="inspect">c5c2f315474b511085406285d36d43a9</application>
+        <file_path/>
+        <instance_id>8f648321db615118f492c59705961907</instance_id>
+        <instance_name>dev133040</instance_name>
+        <name>sp_instance_f51b4d4e4714211085406285d36d435b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">6d09c1ca4714211085406285d36d43a5</sp_column><sp_widget display_value="Stock Header">bf5ec2f2cb10120000f8d856634c9c0c</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-11 08:56:59</sys_created_on><sys_id>f51b4d4e4714211085406285d36d435b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package><sys_policy/><sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope><sys_update_name>sp_instance_f51b4d4e4714211085406285d36d435b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-11 08:56:59</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=f51b4d4e4714211085406285d36d435b"/></record_update>]]></payload>
+        <payload_hash>-2019381981</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>a858f6674703111085406285d36d43fc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 08:57:00</sys_created_on>
+        <sys_id>b51b4d4e4714211085406285d36d435d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185a00c03700000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 08:57:00</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>fd1b4d4e1d1421107c7385e6a16aa75c</update_guid>
+        <update_guid_history>fd1b4d4e1d1421107c7385e6a16aa75c:-2019381981</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b71b4d4e4714211085406285d36d43cd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 08:57:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>4944694a51c942248ae6663653adb2e4</sys_id>
+        <sys_metadata>f51b4d4e4714211085406285d36d435b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_scope_delete display_value="">2c6ca52cc63d45288ef36c1643f59240</sys_scope_delete>
+        <sys_update_name>sp_instance_f51b4d4e4714211085406285d36d435b</sys_update_name>
+        <sys_update_version display_value="sp_instance_f51b4d4e4714211085406285d36d435b">b51b4d4e4714211085406285d36d435d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 08:57:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

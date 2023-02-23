@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
+    <m2m_sp_widget_dependency action="DELETE">
+        <sp_dependency display_value="new_extrenal_js_file">ab41672d4710211085406285d36d43a1</sp_dependency>
+        <sp_widget display_value="inspect_page">1fe0efe94710211085406285d36d4381</sp_widget>
+        <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 06:37:08</sys_created_on>
+        <sys_id>9b716fe94710211085406285d36d43c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>new_extrenal_js_file.inspect_page</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_update_name>m2m_sp_widget_dependency_9b716fe94710211085406285d36d43c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-10 06:37:08</sys_updated_on>
+    </m2m_sp_widget_dependency>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="inspect">c5c2f315474b511085406285d36d43a9</application>
+        <file_path/>
+        <instance_id>8f648321db615118f492c59705961907</instance_id>
+        <instance_name>dev133040</instance_name>
+        <name>m2m_sp_widget_dependency_9b716fe94710211085406285d36d43c4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="new_extrenal_js_file">ab41672d4710211085406285d36d43a1</sp_dependency><sp_widget display_value="inspect_page">1fe0efe94710211085406285d36d4381</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-10 06:37:08</sys_created_on><sys_id>9b716fe94710211085406285d36d43c4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>new_extrenal_js_file.inspect_page</sys_name><sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package><sys_policy/><sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope><sys_update_name>m2m_sp_widget_dependency_9b716fe94710211085406285d36d43c4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-10 06:37:08</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+        <payload_hash>-1298726912</payload_hash>
+        <record_name>new_extrenal_js_file.inspect_page</record_name>
+        <reverted_from/>
+        <source>a858f6674703111085406285d36d43fc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 06:37:08</sys_created_on>
+        <sys_id>17712b2d4710211085406285d36d4377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1859a659dd80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-10 06:37:08</sys_updated_on>
+        <type>Widget Dependency</type>
+        <update_guid>5f712b2d021021104a7e7f645beebe76</update_guid>
+        <update_guid_history>5f712b2d021021104a7e7f645beebe76:-1298726912</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="new_extrenal_js_file.inspect_page">90ffc83d47d0211085406285d36d4387</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 10:00:05</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_widget_dependency">m2m_sp_widget_dependency</sys_db_object>
+        <sys_id>2405ae0fa8c74db0a8b78263323fc840</sys_id>
+        <sys_metadata>9b716fe94710211085406285d36d43c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>new_extrenal_js_file.inspect_page</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_scope_delete display_value="">2c6ca52cc63d45288ef36c1643f59240</sys_scope_delete>
+        <sys_update_name>m2m_sp_widget_dependency_9b716fe94710211085406285d36d43c4</sys_update_name>
+        <sys_update_version display_value="m2m_sp_widget_dependency_9b716fe94710211085406285d36d43c4">17712b2d4710211085406285d36d4377</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-10 10:00:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

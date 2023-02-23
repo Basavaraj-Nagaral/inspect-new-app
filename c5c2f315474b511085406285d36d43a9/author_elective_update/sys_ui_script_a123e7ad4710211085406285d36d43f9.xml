@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="DELETE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <ignore_in_now_experience>false</ignore_in_now_experience>
+        <name>x_820117_inspect.index.js</name>
+        <script><![CDATA[import {foodItem} from './fooditems.js'
+
+function displayItems(){
+    var biryani= document.getElementById('biryani');
+    var paneer=  document.getElementById('paneer');
+    var chicken=  document.getElementById('chicken');
+    var vegetable=  document.getElementById('vegetable');
+    var chinese=  document.getElementById('chinese');
+    var southIndian=  document.getElementById('south-indian');
+
+    
+
+    const biryaniData= foodItem.filter((item)=>item.category=='biryani');
+    const chickenData= foodItem.filter((item)=>item.category=='chicken');
+    const PaneerData= foodItem.filter((item)=>item.category=='paneer');
+    const vegetableData= foodItem.filter((item)=>item.category=='vegetable');
+    const chineseData= foodItem.filter((item)=>item.category=='chinese');
+    const southData= foodItem.filter((item)=>item.category=='south indian');
+    biryaniData.map(item=>{
+        
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price :  Rs' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+
+        biryani.appendChild(itemCard);
+        
+    })
+
+
+    chickenData.map(item=>{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+        
+        chicken.appendChild(itemCard)
+
+    })
+
+    PaneerData.map(item=>{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+        
+        paneer.appendChild(itemCard)
+
+    })
+
+    vegetableData.map(item=>{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+
+        
+        vegetable.appendChild(itemCard)
+    
+    })
+
+    chineseData.map(item=>{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+
+        
+        chinese.appendChild(itemCard)
+        
+    })
+
+    southData.map(item=>{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+
+        southIndian.appendChild(itemCard)
+
+    })
+}
+displayItems();
+
+
+const vegData= [...new Map(foodItem.map(item=> [item['category'],item])).values()];
+console.log(vegData);
+
+function selectTaste(){
+    var categoryList= document.getElementById('category-list');
+
+    vegData.map(item=>{
+        console.log(item)
+        var listCard= document.createElement('div');
+        listCard.setAttribute('class','list-card');
+    
+        var listImg= document.createElement('img');
+        listImg.src= item.img;
+    
+        var listName= document.createElement('a');
+        listName.setAttribute('class','list-name');
+        listName.innerText= item.category;
+        listName.setAttribute('href','#'+item.category)
+    
+        listCard.appendChild(listImg);
+        listCard.appendChild(listName);
+
+        var cloneListCard= listCard.cloneNode(true);
+        categoryList.appendChild(listCard);
+        document.querySelector('.category-header').appendChild(cloneListCard)
+    })
+}
+selectTaste();
+
+
+document.querySelectorAll('.add-to-cart').forEach(item=>{
+    item.addEventListener('click',addToCart)
+})
+
+var cartData= [];
+function addToCart(){
+    
+    var itemToAdd= this.parentNode.nextSibling.nextSibling.innerText;
+    var itemObj= foodItem.find(element=>element.name==itemToAdd);
+
+    var index= cartData.indexOf(itemObj);
+    if(index=== -1){
+        document.getElementById(itemObj.id).classList.add('toggle-heart');
+        cartData= [...cartData,itemObj];
+    }
+    else if(index > -1){
+        alert("Added to cart!");
+    }
+    
+    document.getElementById('cart-plus').innerText=
+    ' ' + cartData.length + ' Items';
+    document.getElementById('m-cart-plus').innerText=
+    ' ' + cartData.length;
+    totalAmount();
+    cartItems();
+}
+
+
+function cartItems(){
+    var tableBody=  document.getElementById('table-body');
+    tableBody.innerHTML= '';
+
+    cartData.map(item=> {
+        var tableRow= document.createElement('tr');
+        
+        var rowData1= document.createElement('td');
+        var img= document.createElement('img');
+        img.src= item.img;
+        rowData1.appendChild(img);
+    
+        var rowData2= document.createElement('td');
+        rowData2.innerText= item.name;
+        
+        var rowData3= document.createElement('td');
+        var btn1= document.createElement('button');
+        btn1.setAttribute('class','decrease-item');
+        btn1.innerText= '-';
+        var span= document.createElement('span');
+        span.innerText= item.quantity;
+        var btn2= document.createElement('button');
+        btn2.setAttribute('class','increase-item');
+        btn2.innerText= '+';
+        
+        rowData3.appendChild(btn1);
+        rowData3.appendChild(span);
+        rowData3.appendChild(btn2);
+    
+        var rowData4= document.createElement('td');
+        rowData4.innerText= item.price;
+    
+        tableRow.appendChild(rowData1);
+        tableRow.appendChild(rowData2);
+        tableRow.appendChild(rowData3);
+        tableRow.appendChild(rowData4);
+    
+        tableBody.appendChild(tableRow);
+    })
+    document.querySelectorAll('.increase-item').forEach(item=>{
+        item.addEventListener('click',incrementItem)
+    })
+
+    document.querySelectorAll('.decrease-item').forEach(item=>{
+        item.addEventListener('click',decrementItem)
+    })
+}
+
+
+function incrementItem(){
+    let itemToInc= this.parentNode.previousSibling.innerText;
+    console.log(itemToInc)
+    var incObj= cartData.find(element=>element.name==itemToInc);
+    incObj.quantity+=1;
+    
+    currPrice= (incObj.price*incObj.quantity - incObj.price*(incObj.quantity-1))/(incObj.quantity-1);
+    incObj.price= currPrice*incObj.quantity;
+    totalAmount()
+    cartItems();
+}
+
+var currPrice= 0;
+function decrementItem(){
+    let itemToInc= this.parentNode.previousSibling.innerText;
+    let decObj= cartData.find(element=>element.name==itemToInc);
+    let ind= cartData.indexOf(decObj);
+    if(decObj.quantity >1){
+        currPrice= (decObj.price*decObj.quantity - decObj.price*(decObj.quantity-1))/(decObj.quantity);
+        decObj.quantity-= 1;
+        decObj.price= currPrice*decObj.quantity;
+    }
+    else{
+        document.getElementById(decObj.id).classList.remove('toggle-heart')
+        cartData.splice(ind,1);
+        document.getElementById('cart-plus').innerText= ' ' + cartData.length + ' Items';
+        document.getElementById('m-cart-plus').innerText= ' ' + cartData.length;
+        if(cartData.length < 1 && flag){
+            document.getElementById('food-items').classList.toggle('food-items');
+            document.getElementById('category-list').classList.toggle('food-items');
+            document.getElementById('m-cart-plus').classList.toggle('m-cart-toggle')
+            document.getElementById('cart-page').classList.toggle('cart-toggle');
+            document.getElementById('category-header').classList.toggle('toggle-category');
+            document.getElementById('checkout').classList.toggle('cart-toggle');
+            flag= false;
+            alert("Currently no item in cart!");
+            console.log(flag)
+        }
+    }
+    totalAmount()
+    cartItems()
+}
+
+function totalAmount(){
+    var sum=0;
+    cartData.map(item=>{
+        sum+= item.price;
+    })
+    document.getElementById('total-item').innerText= 'Total Item : ' + cartData.length;
+    document.getElementById('total-price').innerText= 'Total Price : Rs ' + sum;
+    document.getElementById('m-total-amount').innerText= 'Total Price : Rs ' + sum;
+}
+
+document.getElementById('cart-plus').addEventListener('click',cartToggle);
+document.getElementById('m-cart-plus').addEventListener('click',cartToggle);
+
+var flag= false;
+function cartToggle(){
+    if(cartData.length > 0){
+        document.getElementById('food-items').classList.toggle('food-items');
+        document.getElementById('category-list').classList.toggle('food-items');
+        document.getElementById('category-header').classList.toggle('toggle-category');
+        document.getElementById('m-cart-plus').classList.toggle('m-cart-toggle')
+        document.getElementById('cart-page').classList.toggle('cart-toggle');
+        document.getElementById('checkout').classList.toggle('cart-toggle');
+        flag= true;
+        console.log(flag)
+    }
+    else{
+        alert("Currently no item in cart!");
+    }
+}
+
+
+
+window.onresize= window.onload= function(){
+    var size= window.screen.width;
+    console.log(size)
+    if(size<800){
+        var cloneFoodItems= document.getElementById('food-items').cloneNode(true);
+        var cloneCartPage= document.getElementById('cart-page').cloneNode(true);
+        document.getElementById('food-items').remove();
+        document.getElementById('cart-page').remove();
+        document.getElementById('category-header').after(cloneFoodItems);
+        document.getElementById('food-items').after(cloneCartPage);
+        addEvents()
+    }
+    if(size>800){
+        var cloneFoodItems= document.getElementById('food-items').cloneNode(true);
+        document.getElementById('food-items').remove();
+        document.getElementById('header').after(cloneFoodItems);
+
+        var cloneCartPage= document.getElementById('cart-page').cloneNode(true);
+        document.getElementById('cart-page').remove();
+        document.getElementById('food-items').after(cloneCartPage);
+        addEvents()
+    }
+}
+
+function addEvents(){
+    document.querySelectorAll('.add-to-cart').forEach(item=>{
+        item.addEventListener('click',addToCart)
+    });
+    document.querySelectorAll('.increase-item').forEach(item=>{
+        item.addEventListener('click',incrementItem)
+    })
+
+    document.querySelectorAll('.decrease-item').forEach(item=>{
+        item.addEventListener('click',decrementItem)
+    })
+}
+
+document.getElementById('add-address').addEventListener('click',addAddress);
+
+document.getElementById('m-add-address').addEventListener('click',addAddress);
+
+function addAddress(){
+    var address= prompt('Enter your address','');
+    if(address){
+        document.getElementById('add-address').innerText= ' ' + address;
+    }
+    else{
+        alert("Address not added")
+    }
+}
+]]></script>
+        <script_name>index.js</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 06:46:35</sys_created_on>
+        <sys_id>a123e7ad4710211085406285d36d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_820117_inspect.index.js</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_update_name>sys_ui_script_a123e7ad4710211085406285d36d43f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-10 06:46:35</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="inspect">c5c2f315474b511085406285d36d43a9</application>
+        <file_path/>
+        <instance_id>8f648321db615118f492c59705961907</instance_id>
+        <instance_name>dev133040</instance_name>
+        <name>sys_ui_script_a123e7ad4710211085406285d36d43f9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;ignore_in_now_experience&gt;false&lt;/ignore_in_now_experience&gt;&lt;name&gt;x_820117_inspect.index.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[import {foodItem} from './fooditems.js'
+
+function displayItems(){
+    var biryani= document.getElementById('biryani');
+    var paneer=  document.getElementById('paneer');
+    var chicken=  document.getElementById('chicken');
+    var vegetable=  document.getElementById('vegetable');
+    var chinese=  document.getElementById('chinese');
+    var southIndian=  document.getElementById('south-indian');
+
+    
+
+    const biryaniData= foodItem.filter((item)=&gt;item.category=='biryani');
+    const chickenData= foodItem.filter((item)=&gt;item.category=='chicken');
+    const PaneerData= foodItem.filter((item)=&gt;item.category=='paneer');
+    const vegetableData= foodItem.filter((item)=&gt;item.category=='vegetable');
+    const chineseData= foodItem.filter((item)=&gt;item.category=='chinese');
+    const southData= foodItem.filter((item)=&gt;item.category=='south indian');
+    biryaniData.map(item=&gt;{
+        
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price :  Rs' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+
+        biryani.appendChild(itemCard);
+        
+    })
+
+
+    chickenData.map(item=&gt;{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+        
+        chicken.appendChild(itemCard)
+
+    })
+
+    PaneerData.map(item=&gt;{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+        
+        paneer.appendChild(itemCard)
+
+    })
+
+    vegetableData.map(item=&gt;{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+
+        
+        vegetable.appendChild(itemCard)
+    
+    })
+
+    chineseData.map(item=&gt;{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+
+        
+        chinese.appendChild(itemCard)
+        
+    })
+
+    southData.map(item=&gt;{
+        var itemCard= document.createElement('div');
+        itemCard.setAttribute('id','item-card')
+
+        var cardTop= document.createElement('div');
+        cardTop.setAttribute('id','card-top');
+
+        var star= document.createElement('i');
+        star.setAttribute('class','fa fa-star');
+        star.setAttribute('id','rating');
+        star.innerText= ' ' + item.rating;
+
+        var heart= document.createElement('i');
+        heart.setAttribute('class','fa fa-heart-o add-to-cart');
+        heart.setAttribute('id',item.id)
+
+        cardTop.appendChild(star);
+        cardTop.appendChild(heart);
+
+
+        var img= document.createElement('img');
+        img.src=item.img;
+
+        var itemName= document.createElement('p');
+        itemName.setAttribute('id','item-name');
+        itemName.innerText= item.name;
+
+        var itemPrice= document.createElement('p');
+        itemPrice.setAttribute('id','item-price');
+        itemPrice.innerText= 'Price : Rs ' + item.price;
+
+        itemCard.appendChild(cardTop);
+        itemCard.appendChild(img);
+        itemCard.appendChild(itemName);
+        itemCard.appendChild(itemPrice);
+
+        southIndian.appendChild(itemCard)
+
+    })
+}
+displayItems();
+
+
+const vegData= [...new Map(foodItem.map(item=&gt; [item['category'],item])).values()];
+console.log(vegData);
+
+function selectTaste(){
+    var categoryList= document.getElementById('category-list');
+
+    vegData.map(item=&gt;{
+        console.log(item)
+        var listCard= document.createElement('div');
+        listCard.setAttribute('class','list-card');
+    
+        var listImg= document.createElement('img');
+        listImg.src= item.img;
+    
+        var listName= document.createElement('a');
+        listName.setAttribute('class','list-name');
+        listName.innerText= item.category;
+        listName.setAttribute('href','#'+item.category)
+    
+        listCard.appendChild(listImg);
+        listCard.appendChild(listName);
+
+        var cloneListCard= listCard.cloneNode(true);
+        categoryList.appendChild(listCard);
+        document.querySelector('.category-header').appendChild(cloneListCard)
+    })
+}
+selectTaste();
+
+
+document.querySelectorAll('.add-to-cart').forEach(item=&gt;{
+    item.addEventListener('click',addToCart)
+})
+
+var cartData= [];
+function addToCart(){
+    
+    var itemToAdd= this.parentNode.nextSibling.nextSibling.innerText;
+    var itemObj= foodItem.find(element=&gt;element.name==itemToAdd);
+
+    var index= cartData.indexOf(itemObj);
+    if(index=== -1){
+        document.getElementById(itemObj.id).classList.add('toggle-heart');
+        cartData= [...cartData,itemObj];
+    }
+    else if(index &gt; -1){
+        alert("Added to cart!");
+    }
+    
+    document.getElementById('cart-plus').innerText=
+    ' ' + cartData.length + ' Items';
+    document.getElementById('m-cart-plus').innerText=
+    ' ' + cartData.length;
+    totalAmount();
+    cartItems();
+}
+
+
+function cartItems(){
+    var tableBody=  document.getElementById('table-body');
+    tableBody.innerHTML= '';
+
+    cartData.map(item=&gt; {
+        var tableRow= document.createElement('tr');
+        
+        var rowData1= document.createElement('td');
+        var img= document.createElement('img');
+        img.src= item.img;
+        rowData1.appendChild(img);
+    
+        var rowData2= document.createElement('td');
+        rowData2.innerText= item.name;
+        
+        var rowData3= document.createElement('td');
+        var btn1= document.createElement('button');
+        btn1.setAttribute('class','decrease-item');
+        btn1.innerText= '-';
+        var span= document.createElement('span');
+        span.innerText= item.quantity;
+        var btn2= document.createElement('button');
+        btn2.setAttribute('class','increase-item');
+        btn2.innerText= '+';
+        
+        rowData3.appendChild(btn1);
+        rowData3.appendChild(span);
+        rowData3.appendChild(btn2);
+    
+        var rowData4= document.createElement('td');
+        rowData4.innerText= item.price;
+    
+        tableRow.appendChild(rowData1);
+        tableRow.appendChild(rowData2);
+        tableRow.appendChild(rowData3);
+        tableRow.appendChild(rowData4);
+    
+        tableBody.appendChild(tableRow);
+    })
+    document.querySelectorAll('.increase-item').forEach(item=&gt;{
+        item.addEventListener('click',incrementItem)
+    })
+
+    document.querySelectorAll('.decrease-item').forEach(item=&gt;{
+        item.addEventListener('click',decrementItem)
+    })
+}
+
+
+function incrementItem(){
+    let itemToInc= this.parentNode.previousSibling.innerText;
+    console.log(itemToInc)
+    var incObj= cartData.find(element=&gt;element.name==itemToInc);
+    incObj.quantity+=1;
+    
+    currPrice= (incObj.price*incObj.quantity - incObj.price*(incObj.quantity-1))/(incObj.quantity-1);
+    incObj.price= currPrice*incObj.quantity;
+    totalAmount()
+    cartItems();
+}
+
+var currPrice= 0;
+function decrementItem(){
+    let itemToInc= this.parentNode.previousSibling.innerText;
+    let decObj= cartData.find(element=&gt;element.name==itemToInc);
+    let ind= cartData.indexOf(decObj);
+    if(decObj.quantity &gt;1){
+        currPrice= (decObj.price*decObj.quantity - decObj.price*(decObj.quantity-1))/(decObj.quantity);
+        decObj.quantity-= 1;
+        decObj.price= currPrice*decObj.quantity;
+    }
+    else{
+        document.getElementById(decObj.id).classList.remove('toggle-heart')
+        cartData.splice(ind,1);
+        document.getElementById('cart-plus').innerText= ' ' + cartData.length + ' Items';
+        document.getElementById('m-cart-plus').innerText= ' ' + cartData.length;
+        if(cartData.length &lt; 1 &amp;&amp; flag){
+            document.getElementById('food-items').classList.toggle('food-items');
+            document.getElementById('category-list').classList.toggle('food-items');
+            document.getElementById('m-cart-plus').classList.toggle('m-cart-toggle')
+            document.getElementById('cart-page').classList.toggle('cart-toggle');
+            document.getElementById('category-header').classList.toggle('toggle-category');
+            document.getElementById('checkout').classList.toggle('cart-toggle');
+            flag= false;
+            alert("Currently no item in cart!");
+            console.log(flag)
+        }
+    }
+    totalAmount()
+    cartItems()
+}
+
+function totalAmount(){
+    var sum=0;
+    cartData.map(item=&gt;{
+        sum+= item.price;
+    })
+    document.getElementById('total-item').innerText= 'Total Item : ' + cartData.length;
+    document.getElementById('total-price').innerText= 'Total Price : Rs ' + sum;
+    document.getElementById('m-total-amount').innerText= 'Total Price : Rs ' + sum;
+}
+
+document.getElementById('cart-plus').addEventListener('click',cartToggle);
+document.getElementById('m-cart-plus').addEventListener('click',cartToggle);
+
+var flag= false;
+function cartToggle(){
+    if(cartData.length &gt; 0){
+        document.getElementById('food-items').classList.toggle('food-items');
+        document.getElementById('category-list').classList.toggle('food-items');
+        document.getElementById('category-header').classList.toggle('toggle-category');
+        document.getElementById('m-cart-plus').classList.toggle('m-cart-toggle')
+        document.getElementById('cart-page').classList.toggle('cart-toggle');
+        document.getElementById('checkout').classList.toggle('cart-toggle');
+        flag= true;
+        console.log(flag)
+    }
+    else{
+        alert("Currently no item in cart!");
+    }
+}
+
+
+
+window.onresize= window.onload= function(){
+    var size= window.screen.width;
+    console.log(size)
+    if(size&lt;800){
+        var cloneFoodItems= document.getElementById('food-items').cloneNode(true);
+        var cloneCartPage= document.getElementById('cart-page').cloneNode(true);
+        document.getElementById('food-items').remove();
+        document.getElementById('cart-page').remove();
+        document.getElementById('category-header').after(cloneFoodItems);
+        document.getElementById('food-items').after(cloneCartPage);
+        addEvents()
+    }
+    if(size&gt;800){
+        var cloneFoodItems= document.getElementById('food-items').cloneNode(true);
+        document.getElementById('food-items').remove();
+        document.getElementById('header').after(cloneFoodItems);
+
+        var cloneCartPage= document.getElementById('cart-page').cloneNode(true);
+        document.getElementById('cart-page').remove();
+        document.getElementById('food-items').after(cloneCartPage);
+        addEvents()
+    }
+}
+
+function addEvents(){
+    document.querySelectorAll('.add-to-cart').forEach(item=&gt;{
+        item.addEventListener('click',addToCart)
+    });
+    document.querySelectorAll('.increase-item').forEach(item=&gt;{
+        item.addEventListener('click',incrementItem)
+    })
+
+    document.querySelectorAll('.decrease-item').forEach(item=&gt;{
+        item.addEventListener('click',decrementItem)
+    })
+}
+
+document.getElementById('add-address').addEventListener('click',addAddress);
+
+document.getElementById('m-add-address').addEventListener('click',addAddress);
+
+function addAddress(){
+    var address= prompt('Enter your address','');
+    if(address){
+        document.getElementById('add-address').innerText= ' ' + address;
+    }
+    else{
+        alert("Address not added")
+    }
+}
+]]&gt;&lt;/script&gt;&lt;script_name&gt;index.js&lt;/script_name&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-01-10 06:46:35&lt;/sys_created_on&gt;&lt;sys_id&gt;a123e7ad4710211085406285d36d43f9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_820117_inspect.index.js&lt;/sys_name&gt;&lt;sys_package display_value="inspect" source="x_820117_inspect"&gt;c5c2f315474b511085406285d36d43a9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="inspect"&gt;c5c2f315474b511085406285d36d43a9&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_a123e7ad4710211085406285d36d43f9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-01-10 06:46:35&lt;/sys_updated_on&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>332898208</payload_hash>
+        <record_name>x_820117_inspect.index.js</record_name>
+        <reverted_from/>
+        <source>a858f6674703111085406285d36d43fc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 06:46:35</sys_created_on>
+        <sys_id>fda3e3ad4710211085406285d36d431d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1859a6e43950000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-10 06:46:35</sys_updated_on>
+        <type>UI Script</type>
+        <update_guid>39a3e3ada5102110f4c436f3bd356b1d</update_guid>
+        <update_guid_history>39a3e3ada5102110f4c436f3bd356b1d:332898208</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-10 06:51:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_script">sys_ui_script</sys_db_object>
+        <sys_id>69e57624da904f34bda10e5865410b10</sys_id>
+        <sys_metadata>a123e7ad4710211085406285d36d43f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_820117_inspect.index.js</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_scope_delete display_value="">2c6ca52cc63d45288ef36c1643f59240</sys_scope_delete>
+        <sys_update_name>sys_ui_script_a123e7ad4710211085406285d36d43f9</sys_update_name>
+        <sys_update_version display_value="sys_ui_script_a123e7ad4710211085406285d36d43f9">fda3e3ad4710211085406285d36d431d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-10 06:51:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

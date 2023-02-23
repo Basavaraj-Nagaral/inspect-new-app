@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Orders" max_length="40" name="x_820117_inspect_orders" sizeclass="5" type="collection">
+    <element label="Orders" max_length="40" name="x_820117_inspect_orders" sizeclass="9" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Location" max_length="40" name="location" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Noneveg items" max_length="40" name="nonveg_itms" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Nonveg Burger" sequence="0" value="nonveg burger"/>
-                <element inactive_on_update="false" label="Nonveg sandwitch" sequence="1" value="nonveg sandwitch"/>
-                <element inactive_on_update="false" label="Nonveg ricebowl" sequence="2" value="nonveg ricebowl"/>
-            </choice>
-        </element>
+        <element attributes="encode_utf8=false" display="true" label="Nonveg" max_length="32" name="nonveg" reference="x_820117_inspect_non_veg_items" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Order type" max_length="40" name="order_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Delivery" sequence="0" value="delivery"/>
                 <element inactive_on_update="false" label="Take away" sequence="1" value="take away"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Veg items" max_length="40" name="veg_items" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Veg burger" sequence="0" value="veg burger"/>
-                <element inactive_on_update="false" label="Veg sandwitch" sequence="1" value="veg sandwitch"/>
-                <element inactive_on_update="false" label="Veg ricebowl" sequence="2" value="veg ricebowl"/>
-            </choice>
-        </element>
+        <element label="Total price" max_length="40" name="total_price" type="integer"/>
+        <element attributes="encode_utf8=false" label="Veg" max_length="32" name="veg" reference="x_820117_inspect_veg_items" type="reference"/>
+        <index name="index">
+            <element name="veg"/>
+        </index>
+        <index name="index2">
+            <element name="nonveg"/>
+        </index>
     </element>
 </database>

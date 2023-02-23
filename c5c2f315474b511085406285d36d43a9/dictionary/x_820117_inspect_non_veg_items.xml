@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Non veg items" max_length="40" name="x_820117_inspect_non_veg_items" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Dish name" max_length="40" name="dish_name" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="New Price" max_length="20" name="u_price_2" type="price"/>
+    </element>
+</database>

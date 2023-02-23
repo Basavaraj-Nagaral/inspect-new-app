@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>copy_of_i_inspect_page_1</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 05:24:35</sys_created_on>
+        <sys_id>4d90319f97302110314b7bc11153af72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>copy_of_i_inspect_page_1</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_update_name>sp_page_4d90319f97302110314b7bc11153af72</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 05:24:35</sys_updated_on>
+        <title>Copy of i_inspect-page (1)</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=4d90319f97302110314b7bc11153af72"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="inspect">c5c2f315474b511085406285d36d43a9</application>
+        <file_path/>
+        <instance_id>8f648321db615118f492c59705961907</instance_id>
+        <instance_name>dev133040</instance_name>
+        <name>sp_page_4d90319f97302110314b7bc11153af72</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>copy_of_i_inspect_page_1</id><internal>false</internal><omit_watcher>false</omit_watcher><public>false</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-09 05:24:35</sys_created_on><sys_id>4d90319f97302110314b7bc11153af72</sys_id><sys_mod_count>0</sys_mod_count><sys_name>copy_of_i_inspect_page_1</sys_name><sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package><sys_policy/><sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope><sys_update_name>sp_page_4d90319f97302110314b7bc11153af72</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-09 05:24:35</sys_updated_on><title>Copy of i_inspect-page (1)</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=4d90319f97302110314b7bc11153af72"/></record_update>]]></payload>
+        <payload_hash>1565750826</payload_hash>
+        <record_name>copy_of_i_inspect_page_1</record_name>
+        <reverted_from/>
+        <source>a858f6674703111085406285d36d43fc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 05:24:35</sys_created_on>
+        <sys_id>4d90399f97302110314b7bc11153af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18634a1f9d70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 05:24:35</sys_updated_on>
+        <type>Page</type>
+        <update_guid>4190319f53302110040faa15168f3875</update_guid>
+        <update_guid_history>4190319f53302110040faa15168f3875:1565750826</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="copy_of_i_inspect_page_1">2210829f97702110314b7bc11153af49</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-09 06:32:25</sys_created_on>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>752d5aabf52f4d28812503a7631ea040</sys_id>
+        <sys_metadata>4d90319f97302110314b7bc11153af72</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>copy_of_i_inspect_page_1</sys_name>
+        <sys_package display_value="inspect" source="x_820117_inspect">c5c2f315474b511085406285d36d43a9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="inspect">c5c2f315474b511085406285d36d43a9</sys_scope>
+        <sys_scope_delete display_value="">2c6ca52cc63d45288ef36c1643f59240</sys_scope_delete>
+        <sys_update_name>sp_page_4d90319f97302110314b7bc11153af72</sys_update_name>
+        <sys_update_version display_value="sp_page_4d90319f97302110314b7bc11153af72">4d90399f97302110314b7bc11153af60</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-09 06:32:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
